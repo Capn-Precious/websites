@@ -8,13 +8,10 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
-
-                        <a href="/about" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-
-                        <a href="/mission" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Mission</a>
-
-                        <a href="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="/" class="<?= utlIs('/') ? 'bg-gray-900' : 'text-gray-300'; ?>  hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+                        <a href="/about" class="<?= utlIs('/about.php') ? 'bg-gray-900' : 'text-gray-300'; ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/mission" class="<?= utlIs('/contact.php') ? 'bg-gray-900' : 'text-gray-300'; ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Mission</a>
+                        <a href="/contact" class="<?= utlIs('/mission.php') ? 'bg-gray-900' : 'text-gray-300'; ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
 
                     </div>
                 </div>
